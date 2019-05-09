@@ -1,3 +1,20 @@
 <p>
-  account-list works!
+  account-list
+
 </p>
+
+<ul>
+<li *ngFor = "let data of dataSource">
+  <p>
+    {{data.id}}<br>
+    {{data.name}}<br>
+    {{data.email}}<br>
+    {{data.phone}}<br>
+    {{data.website}}<br>
+    {{data.description}}<br>
+   {{data.createdBy}}<br>
+    {{data.isActive}}<br>
+    
+  </p>
+</li>
+</ul>
