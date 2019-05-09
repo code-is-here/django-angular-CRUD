@@ -16,7 +16,7 @@ public postData;
 
   public add(){
     //Simple customer object is used for post the data using RestFul API Post Call.
-    var data = {description :"Anil", contact: 1 , createdAt : "2019-05-09T07:26:39.384341Z"}
+    var data = {first_name : "John", last_name: "cena", email: "amber@nickelfox.com", phone:"2345678", account : 1, createdBy : 1,createdAt: "2019-05-09T07:26:59.570308Z", isActive: "False" }
 
     this.contactService.addContact(data)
         .subscribe(data => {
