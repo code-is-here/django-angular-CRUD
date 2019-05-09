@@ -10,7 +10,17 @@ import { ContactListComponent } from './contact-list/contact-list.component';
 import { ActivityListComponent } from './activity-list/activity-list.component';
 import { ActivityCreateComponent } from './activity-create/activity-create.component';
 import { routingcomponenets } from './app-routing.module';
-import { RouterModule } from '@angular/router';
+import { HttpModule } from '@angular/http';
+import { 
+  MatToolbarModule, 
+  MatButtonModule,
+   MatSidenavModule,
+   MatIconModule,MatFormFieldModule,MatRippleModule,
+   MatListModule ,
+   MatStepperModule,
+   MatInputModule
+  } from '@angular/material';
+import { FormsModule , ReactiveFormsModule} from '@angular/forms';
 import {AppRoutingModule} from './app-routing.module';
 
 @NgModule({
@@ -26,9 +36,16 @@ import {AppRoutingModule} from './app-routing.module';
   
   ],
   imports: [
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatRippleModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    HttpModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
