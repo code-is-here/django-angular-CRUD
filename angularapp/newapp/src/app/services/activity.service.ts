@@ -15,7 +15,7 @@ export class ActivitytService {
   getActivityPage(){
     return this.httpClient.get("http://localhost:8001/activities");
   }
-  public addActivity (customer :any){
-    return this.http.post("http://localhost:8001/activities", customer, this.httpOptions);
+  public addActivity (data :any){
+    return this.http.post("http://localhost:8001/activities", data, this.httpOptions);
   }
 }
