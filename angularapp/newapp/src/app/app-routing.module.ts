@@ -37,3 +37,5 @@ const routes : Routes=[
     exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export const routingcomponenets =   [AccountListComponent, AccountCreateComponent, ActivityListComponent, ActivityCreateComponent,
+    ContactListComponent, ContactListComponent];
