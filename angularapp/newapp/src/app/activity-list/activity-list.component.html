@@ -1,3 +1,14 @@
 <p>
-  activity-list works!
+  Activity List
 </p>
+
+<ul>
+<li *ngFor = "let data of dataSource">
+  <p>
+    {{data.description}}<br>
+    {{data.contact}}<br>
+    {{data.createdAt}}<br>
+   
+  </p>
+</li>
+</ul>

@@ -1,3 +1,19 @@
 <p>
-  contact-list works!
+  contact-list
 </p>
+
+<ul>
+<li *ngFor = "let data of dataSource">
+  <p>
+    {{data.id}}<br>
+    {{data.first_name}}<br>
+    {{data.last_name}}<br>
+    {{data.email}}<br>
+    {{data.phone}}<br>
+    {{data.account}}<br>
+    {{data.createdBy}}<br>
+    {{data.createdAt}}<br>
+    {{data.isActive}}<br>
+  </p>
+</li>
+</ul>
