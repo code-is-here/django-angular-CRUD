@@ -1,5 +1,6 @@
 import {NgModule} from '@angular/core';
-import {Routes,RouterModule, Router} from '@angular/router';
+import {Routes,RouterModule} from '@angular/router';
+import { CommonModule } from '@angular/common';
 import { AccountListComponent } from './account-list/account-list.component';
 import { AccountCreateComponent } from './account-create/account-create.component';
 import { ContactListComponent } from './contact-list/contact-list.component';
@@ -9,10 +10,30 @@ import { ActivityCreateComponent } from './activity-create/activity-create.compo
 
 const routes : Routes=[
     { path: 'accounts', component: AccountListComponent},
+    {
+        path: 'create-account',
+        component: AccountCreateComponent
+      },
+      {
+        path: 'contacts',
+        component: ContactListComponent
+      },
+      {
+        path: 'create-contact',
+        component: ContactCreateComponent
+      },
+      {
+        path: 'activities',
+        component: ActivityListComponent
+      },
+      {
+        path: 'create-activity',
+        component: ActivityCreateComponent
+      }
 ];
 
 @NgModule({
     imports:[RouterModule.forRoot(routes)],
     exports: [RouterModule]
 })
-export class AppRoutingModule{ }
+export class AppRoutingModule { }
