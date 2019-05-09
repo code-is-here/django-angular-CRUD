@@ -1,6 +1,12 @@
-<h1>
-Hello world
-</h1>
-<router-outlet></router-outlet>
+<a [routerLink]="'/accounts'"> Accounts </a> <br>
+<a [routerLink]="'/create-account'"> Create Account </a><br>
 
+<a [routerLink]="'/contacts'"> Contacts </a><br>
+<a [routerLink]="'/create-contact'"> Create Contact </a><br>
 
+<a [routerLink]="'/activities'"> Activities </a><br>
+<a [routerLink]="'/create-activity'"> Create Activity </a><br>
+
+<div>
+    <router-outlet></router-outlet>
+</div>
